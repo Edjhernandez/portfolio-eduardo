@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Navbar } from './ui/components/Navbar'
+import { Navbar } from './ui/components/Navbar/Navbar'
 
 export const metadata: Metadata = {
   title: 'Portfolio Eduardo Hernandez',
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" className='bg-dark-bg'>
+      <body className='max-w-screen-2xl  mx-auto'>
         <Navbar />
         {children}
       </body>
