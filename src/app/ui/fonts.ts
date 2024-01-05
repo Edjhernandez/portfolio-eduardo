@@ -11,6 +11,6 @@ export const dosis = Dosis({
 })
 
 export const inconsolata = Inconsolata({
-    weight: '700', 
+    weight: ['700', '500'],
     subsets: ['latin']
 })

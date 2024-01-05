@@ -11,10 +11,10 @@ import { usePathname } from "next/navigation"
 export function Navbar(){
 
     const path = usePathname()
-    const [burgerBtn, setBugerBtn] = useState<boolean>(false)
+    const [burgerBtn, setBurgerBtn] = useState<boolean>(false)
 
     const handleBtnLink = () => {
-        setBugerBtn(!burgerBtn)
+        setBurgerBtn(!burgerBtn)
     }
 
     return(
@@ -58,7 +58,7 @@ export function Navbar(){
             {burgerBtn && <div className={clsx(
                 "w-full bg-dark-bg",
                 {
-                    'absolute menu-animation-in border-2 border-mark-text2 rounded-lg' : burgerBtn
+                    'absolute menu-animation-in border-2 border-mark-text2 rounded-lg z-10' : burgerBtn
                 }
                 )}>
                 <ul className={`flex flex-col justify-center items-center ${inconsolata.className} text-text text-2xl`}>
