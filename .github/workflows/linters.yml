@@ -17,7 +17,7 @@ jobs:
       - name: Setup ESLint
         run: |
           npm install --save-dev eslint@8.45.0 eslint-config-next@14.0.4
-          [ -f .eslintrc.json ] || cp .eslintrc.json
+          [ -f .eslintrc.json ] || cp .eslintrc.json.example .eslintrc.json
       - name: ESLint Report
         run: npm run lint
   stylelint:
@@ -31,6 +31,6 @@ jobs:
       - name: Setup Stylelint
         run: |
           npm install --save-dev stylelint@15.10.0 stylelint-config-recommended@13.0.0 stylelint-order@6.0.3
-          [ -f .stylelintrc.json ] || cp .stylelintrc.json.example .stylelintrc.json
+          [ -f .stylelintrc.json ] || cp .stylelintrc.json
       - name: Stylelint Report
         run: npx stylelint "**/*.{css,scss}"
