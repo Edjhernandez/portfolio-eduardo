@@ -72,3 +72,14 @@ export default function Home() {
     </main>
   )
 }
+
+
+/*
+import { saveAs } from "file-saver"
+const saveFile = () => {
+    saveAs(
+      "./Resume.pdf",
+      "Resume-Daniela.pdf"
+    );
+  };
+*/
