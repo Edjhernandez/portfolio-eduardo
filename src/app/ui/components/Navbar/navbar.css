@@ -1,13 +1,13 @@
 
   
 .menu-animation-in {
-    animation-name: slide-left-right;
     animation-duration: 1s;
+    animation-name: slide-left-right;
 }
 
 .menu-animation-out {
-    animation-name: slide-right-left;
     animation-duration: 1s;
+    animation-name: slide-right-left;
 }
 
 @keyframes slide-left-right { 
