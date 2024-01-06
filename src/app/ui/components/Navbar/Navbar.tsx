@@ -2,11 +2,9 @@
 import Link from "next/link"
 import { kanit, inconsolata } from "../../fonts"
 import { useState } from "react"
-import clsx from "clsx" //https://deeditor.com/
+import clsx from "clsx"
 import './navbar.css'
 import { usePathname } from "next/navigation"
-
-//https://www.figma.com/file/aW1QbWGfV5BouCz3Y97iYO/My-Portfolio-(Community)?node-id=61%3A285&mode=dev
 
 export function Navbar(){
 
