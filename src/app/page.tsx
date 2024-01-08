@@ -16,19 +16,19 @@ export default function Home() {
       <div className="relative lg:w-1/2">
 
         <Image
-          width={300}
-          height={300}
-          src={'/images/Untitled-1.png'}
+          width={380}
+          height={380}
+          src={'/images/logo3.png'}
           alt="E symbol"
-          className="absolute top-28 ml-auto mr-auto left-0 right-0 sm:hidden"
+          className="absolute top-0 ml-auto mr-auto left-0 right-0 sm:hidden"
         /> 
 
         <Image
-          width={500}
-          height={500}
-          src={'/images/Untitled-1.png'}
+          width={660}
+          height={660}
+          src={'/images/logo3.png'}
           alt="E symbol"
-          className="hidden sm:block sm:absolute sm:top-28 sm:ml-auto sm:mr-auto sm:left-0 sm:right-0"
+          className="hidden sm:block sm:absolute sm:top-0 sm:mx-auto sm:left-0 sm:right-0"
         /> 
 
         <div className="mt-16 mb-16 flex justify-center lg:mt-0">

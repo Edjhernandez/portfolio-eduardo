@@ -23,6 +23,14 @@ export default function About() {
           className="absolute bottom-0 lg:hidden"
         />
 
+        <Image
+          width={260}
+          height={260}
+          alt="sunset"
+          src={'/images/logo.png'}
+          className="hidden lg:block mx-auto mt-20"
+        />
+
       </main> 
     )
   }
