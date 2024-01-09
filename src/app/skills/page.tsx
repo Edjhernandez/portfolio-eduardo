@@ -2,7 +2,7 @@ import { inconsolata } from "../ui/fonts"
 
 export default function Skills() {
     return ( 
-      <main className="flex justify-center flex-col items-center pb-8 w-full">
+      <main className="flex justify-center flex-col items-center pb-8 w-full bg-[radial-gradient(circle_500px_at_50%_250px,#3e3e3e,#1b1a17)]">
 
         <h1 className={`${inconsolata.className} text-mark-text2 not-italic text-[32px] font-bold mt-[64px] mb-8`}>My Skills</h1>
         

@@ -3,7 +3,7 @@ import './globals.css'
 import { Navbar } from './ui/components/Navbar/Navbar'
 
 export const metadata: Metadata = {
-  title: 'Portfolio Eduardo Hernandez',
+  title: 'Eduardo’s Portfolio',
   description: 'my portfolio',
 }
 
@@ -13,8 +13,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-dark-bg'>
-      <body className='max-w-screen-2xl  mx-auto'>
+    <html lang="en">
+      <body className='max-w-screen-2xl mx-auto'>
         <Navbar />
         {children}
       </body>

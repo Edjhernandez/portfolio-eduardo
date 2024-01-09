@@ -16,7 +16,7 @@ export function Navbar(){
     }
 
     return(
-        <nav className="bg-dark-bg">
+        <nav className='w-full fixed top-0 z-50 bg-dark-bg max-w-screen-2xl'>
             
             {/* only mobile */}
             
@@ -54,9 +54,9 @@ export function Navbar(){
             </div>
         
             {burgerBtn && <div className={clsx(
-                "w-full bg-dark-bg",
+                "w-full bg-[#21201D]",
                 {
-                    'absolute menu-animation-in border-2 border-mark-text2 rounded-lg z-10' : burgerBtn
+                    'menu-animation-in border-2 border-mark-text2 rounded-lg' : burgerBtn
                 }
                 )}>
                 <ul className={`flex flex-col justify-center items-center ${inconsolata.className} text-text text-2xl`}>
