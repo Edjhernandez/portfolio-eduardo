@@ -3,11 +3,11 @@ import { inconsolata } from "../ui/fonts"
 
 export default function About() {
     return (
-      <main className={`${inconsolata.className} text-text text-base  font-medium pt-16 lg:text-xl`}>
+      <main className={`${inconsolata.className} bg-[radial-gradient(circle_600px_at_50%_1000px,#3e3e3e,#21201D)] h-screen text-text text-base font-medium pt-16 lg:text-xl`}>
 
         <div className="px-8 lg:max-w-5xl lg:mx-auto">
         
-          <p className="indent-4">Hello everyone! 🤝 Eduardo is my name, I’m a FullStack Web Developer 🤓, particularly passionate about the use of techs like Javascript, Typescript, React, Nextjs, HTML and CSS for problem-solving & project development.</p>
+          <p className="indent-4 mt-8">Hello everyone! 🤝 Eduardo is my name, I’m a FullStack Web Developer 🤓, particularly passionate about the use of techs like Javascript, Typescript, React, Nextjs, HTML and CSS for problem-solving & project development.</p>
 
           <p className="mt-8 mb-8 indent-4">On weekends surely, I’ll be playing soccer ⚽⚽ with friends, work partners, and family on the courts or 🎮, also, I love watching all sports on TV. The better invested time is with my wife and Kids, most times they decide what to do!</p>
 
@@ -28,9 +28,11 @@ export default function About() {
           height={260}
           alt="sunset"
           src={'/images/logo.png'}
-          className="hidden lg:block mx-auto mt-20"
+          className="hidden lg:block mx-auto mt-[100px]"
         />
 
       </main> 
     )
   }
+
+ 

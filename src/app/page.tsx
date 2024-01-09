@@ -1,26 +1,42 @@
-import { inconsolata } from "./ui/fonts";
+'use client'
+import { inconsolata, kanit } from "./ui/fonts";
 import Image from "next/image";
+import { saveAs } from "file-saver"
 
 export default function Home() {
+
+  const saveFile = () => {
+    saveAs(
+      "./Eduardo-Resume.pdf",
+      "Eduardo-Resume.pdf"
+    );
+  };
+  
   return (
-    <main className={`${inconsolata.className} not-italic leading-normal pt-32 lg:flex lg:pt-16`}>
+    <main className={`pt-20 pb-10 bg-[radial-gradient(circle_500px_at_50%_600px,#3e3e3e,#21201D)] ${inconsolata.className} not-italic leading-normal lg:flex`}>
       
-      <div className="w-full flex justify-center lg:w-1/2">
+      <div className="w-full mt-24 flex flex-col items-center lg:w-1/2">
         <div className="pl-3">
           <h1 className="text-mark-text2 text-[40px] font-blacks sm:text-[64px]">Eduardo Hernandez</h1>
           <h5 className="text-text text-[32px] font-bold my-4 sm:text-[40px]">Software Developer</h5>
           <h6 className="text-text text-2xl font-normal  max-w-sm sm:text-[20px]"> I&apos;m a Software Developer 🤓, particularly passionate about the use of techs for problem-solving & project development.</h6>
         </div>
+        <div className="w-full flex justify-center">
+            <button
+              className={`${kanit.className} bg-[#21201D] py-3 px-6 mt-14 rounded-full text-mark-text2 border-2 border-text cursor-pointer hover:border-mark-text2 text-lg leading-8`}
+              onClick={() => saveFile()}
+            >Get FREE Resume</button>
+        </div>
       </div>
       
-      <div className="relative lg:w-1/2">
+      <div className="relative mt-16 lg:w-1/2 lg:mt-16">
 
         <Image
           width={380}
           height={380}
           src={'/images/logo3.png'}
           alt="E symbol"
-          className="absolute top-0 ml-auto mr-auto left-0 right-0 sm:hidden"
+          className="absolute top-4 ml-auto mr-auto left-0 right-0 sm:hidden"
         /> 
 
         <Image
@@ -28,10 +44,10 @@ export default function Home() {
           height={660}
           src={'/images/logo3.png'}
           alt="E symbol"
-          className="hidden sm:block sm:absolute sm:top-0 sm:mx-auto sm:left-0 sm:right-0"
+          className="hidden sm:block sm:absolute sm:top-4 sm:mx-auto sm:left-0 sm:right-0"
         /> 
 
-        <div className="mt-16 mb-16 flex justify-center lg:mt-0">
+        <div className="flex justify-center">
             
           <p className="font-normal text-[10px] text-[#A35709] sm:text-base">let button_menu = document.querySelector(&quot;.header_button&quot;);<br></br>
             let float_menu = document.querySelector(&quot;.header_menu--float&quot;);<br></br>

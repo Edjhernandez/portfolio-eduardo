@@ -7,18 +7,19 @@ import { useState } from "react"
 export function Work(props: dataWork){
 
     const [showModal, setShowModal] = useState<boolean>(false)
-        console.log(props.bgOpacity)
+        
     return(
         <section>
             
-            <div className={`w-80 h-80 flex flex-col items-center justify-center py-4 not-italic gap-10`}>
+            <div className={`w-80 h-80 flex flex-col items-center justify-center py-4 not-italic gap-10 relative`}>
                 <Image
                     width={320}
                     height={320}
                     src={props.bgOpacity}
                     alt="background project image"
-                    className="-z-10 absolute"
+                    className="absolute"
                 />
+                <div className="flex flex-col items-center justify-center py-4 not-italic gap-10 z-10">
                 <h2 className="text-mark-text2 text-[32px] font-bol">{props.title}</h2>
                 <h3 className="text-base text-text font-medium text-center mx-6">{props.toolsUsed}</h3>
                 <div className="w-11/12 h-[1px] border border-[#A35709]"></div>
@@ -28,11 +29,12 @@ export function Work(props: dataWork){
                 >
                     See more →
                 </button>
+                </div>
             </div>
 
             {showModal && 
-            <div className="w-screen h-screen fixed top-0 left-0" onClick={() => setShowModal(false)}>
-                <div className="bg-[#21201D] w-[90%] border-2 border-text rounded-lg flex flex-col items-center px-4 gap-6 py-auto max-w-md absolute top-20 right-0 left-0 m-auto md:flex-row md:top-1 md:bottom-1 md:max-w-3xl md:max-h-[340px] lg:max-w-6xl lg:max-h-[540px]">
+            <div className="w-screen h-screen fixed top-0 left-0 z-20" onClick={() => setShowModal(false)}>
+                <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,#21201D)] w-[90%] border-2 border-text rounded-lg flex flex-col items-center px-4 gap-6 py-auto max-w-md absolute top-20 right-0 left-0 m-auto md:flex-row md:top-1 md:bottom-1 md:max-w-3xl md:max-h-[340px] lg:max-w-6xl lg:max-h-[540px]">
                     <button
                         onClick={() => setShowModal(false)}
                         className="pointer absolute right-2 top-2"
