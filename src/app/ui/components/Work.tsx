@@ -34,7 +34,7 @@ export function Work(props: dataWork){
 
             {showModal && 
             <div className="w-screen h-screen fixed top-0 left-0 z-20" onClick={() => setShowModal(false)}>
-                <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,#21201D)] w-[90%] border-2 border-text rounded-lg flex flex-col items-center px-4 gap-6 py-auto max-w-md absolute top-20 right-0 left-0 m-auto md:flex-row md:top-1 md:bottom-1 md:max-w-3xl md:max-h-[340px] lg:max-w-6xl lg:max-h-[540px]">
+                <div className="bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,#21201D)] w-[90%] border-2 border-text rounded-lg flex flex-col items-center px-4 gap-6 py-auto max-w-md absolute top-32 right-0 left-0 m-auto md:flex-row md:top-1 md:bottom-1 md:max-w-3xl md:max-h-[340px] lg:max-w-6xl lg:max-h-[540px]">
                     <button
                         onClick={() => setShowModal(false)}
                         className="pointer absolute right-2 top-2"

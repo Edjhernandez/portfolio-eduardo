@@ -2,9 +2,9 @@ import { inconsolata } from "../ui/fonts"
 
 export default function Skills() {
     return ( 
-      <main className="flex justify-center flex-col items-center pb-8 w-full bg-[radial-gradient(circle_500px_at_50%_250px,#3e3e3e,#1b1a17)]">
+      <main className="h-screen flex flex-col items-center pb-8 w-full bg-[radial-gradient(circle_500px_at_50%_500px,#3e3e3e,#1b1a17)] bg-no-repeat">
 
-        <h1 className={`${inconsolata.className} text-mark-text2 not-italic text-[32px] font-bold mt-[64px] mb-8`}>My Skills</h1>
+        <h1 className={`${inconsolata.className} text-mark-text2 not-italic text-[32px] font-bold mt-32 mb-8 sm:mt-44 lg:mt-32`}>My Skills</h1>
         
         <div className={`${inconsolata.className} w-full text-white text-2xl not-italic font-medium leading-4  flex items-center justify-center flex-col gap-4 sm:text-[32px] sm:font-bold sm:flex-row sm:flex-wrap max-w-[1400px] sm:px-9 `}>
           
