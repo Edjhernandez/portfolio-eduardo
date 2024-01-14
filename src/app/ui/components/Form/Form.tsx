@@ -32,7 +32,7 @@ export function Form(){
     
     return(
         <form 
-            className="w-3/4 flex flex-col items-center text-lg  py-5 bg-dark-bg rounded-xl mt-4 mb-8 sm:max-w-xl"
+            className="w-3/4 flex flex-col items-center text-lg py-5 bg-dark-bg rounded-xl mt-4 mb-8 sm:max-w-xl lg:text-xl"
             onSubmit={handleSubmit(onSubmit)}
         >
            
