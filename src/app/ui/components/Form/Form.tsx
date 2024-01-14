@@ -1,5 +1,6 @@
 'use client'
-import { inconsolata, kanit } from "../fonts"
+import './form.css'
+import { inconsolata, kanit } from "../../fonts"
 import { useForm as useFormSpree } from "@formspree/react";
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -22,8 +23,8 @@ export function Form(){
         resolver: zodResolver(inputSchema)
     })
 
-    const [formSpreeState, sendToFormSpree] = useFormSpree("xknavray")
-
+    const [formSpreeState, sendToFormSpree] = useFormSpree(`${process.env.NEXT_PUBLIC_FORMSPREE_ID}` || '')
+    
     const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
         sendToFormSpree(data)
         reset()       
@@ -31,7 +32,7 @@ export function Form(){
     
     return(
         <form 
-            className="w-3/4 flex flex-col items-center text-lg  py-5 bg-dark-bg rounded-xl mt-4 mb-4"
+            className="w-3/4 flex flex-col items-center text-lg  py-5 bg-dark-bg rounded-xl mt-4 mb-8 sm:max-w-xl"
             onSubmit={handleSubmit(onSubmit)}
         >
            
@@ -87,23 +88,9 @@ export function Form(){
                 Contact
             </button>
            
-            {formSpreeState.succeeded && <p className="text-text">Thanks for your message!</p>}
-            {formSpreeState.errors && <p className="text-text">Some error occurred, please try again in few minutes!</p>}
+            {formSpreeState.succeeded && <p className="text-text mt-4 text-sm mx-4 text-center">Thanks for your message!</p>}
+            {formSpreeState.errors && <p className="text-text mt-4 text-sm mx-4 text-center">Some error occurred, please try again in few minutes!</p>}
 
         </form>
     )
 }
-
-/*
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px var(--color-light-bg) inset;
-  -webkit-text-fill-color: var(--color-pri-text);
-  border: 1px solid var(--color-pri-text);
-  caret-color: var(--color-pri-text);
-}
-*/
