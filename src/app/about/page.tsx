@@ -3,9 +3,9 @@ import { inconsolata } from "../ui/fonts"
 
 export default function About() {
     return (
-      <main className={`${inconsolata.className} bg-[radial-gradient(circle_600px_at_50%_1000px,#3e3e3e,#21201D)] h-screen text-text text-base font-medium pt-16 lg:text-xl`}>
+      <main className={`${inconsolata.className} bg-[radial-gradient(circle_600px_at_50%_1000px,#3e3e3e,#21201D)] text-text text-base font-medium pt-16 sm:pt-32 lg:pt-16 sm:h-screen lg:text-xl`}>
 
-        <div className="px-8 lg:max-w-5xl lg:mx-auto">
+        <div className="px-8 mt-16 lg:max-w-5xl lg:mx-auto">
         
           <p className="indent-4 mt-8">Hello everyone! 🤝 Eduardo is my name, I’m a FullStack Web Developer 🤓, particularly passionate about the use of techs like Javascript, Typescript, React, Nextjs, HTML and CSS for problem-solving & project development.</p>
 
@@ -20,13 +20,13 @@ export default function About() {
           height={100}
           alt="sunset"
           src={'/images/Artboard1.png'}
-          className="absolute bottom-0 lg:hidden"
+          className="w-full mt-[20px] lg:hidden"
         />
 
         <Image
           width={260}
           height={260}
-          alt="sunset"
+          alt="logo"
           src={'/images/logo.png'}
           className="hidden lg:block mx-auto mt-[100px]"
         />

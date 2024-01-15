@@ -16,16 +16,18 @@ export function Navbar(){
     }
 
     return(
-        <nav className='w-full fixed top-0 z-50 bg-dark-bg max-w-screen-2xl'>
+        <header className='w-full fixed top-0 z-50 bg-dark-bg  max-w-screen-2xl'>
             
             {/* only mobile */}
             
             <div className="flex justify-between items-center px-2 py-4 sm:hidden">
+                
                 <div className={`${kanit.className} flex text-mark-text2 text-[32px] tracking-[0.04em] ml-4`}>
                     <p>&lt;/E</p>
                     <p className="text-text">duard</p>
                     <p>o&gt;</p>
                 </div>
+                
                 <div 
                     className={clsx(
                         "flex flex-col justify-around items-center w-12 h-12 py-1 rounded",
@@ -51,10 +53,11 @@ export function Navbar(){
                         'rotate-[-45deg] origin-bottom-left': burgerBtn
                     })}></div>
                 </div>
+            
             </div>
         
-            {burgerBtn && <div className={clsx(
-                "w-full bg-[#21201D]",
+            {burgerBtn && <nav className={clsx(
+                "w-full bg-[#21201D] absolute z-10",
                 {
                     'menu-animation-in border-2 border-mark-text2 rounded-lg' : burgerBtn
                 }
@@ -101,7 +104,7 @@ export function Navbar(){
                         </Link>
                     </li>
                 </ul>
-            </div>}
+            </nav>}
 
             {/* tablet desktop */}
 
@@ -113,7 +116,9 @@ export function Navbar(){
                     <p>o&gt;</p>
                 </div>
 
-                <ul className={`flex justify-center items-center ${inconsolata.className} text-text text-2xl sm:text-xl sm:w-full sm:justify-around sm:px-20 lg:px-0 lg:w-1/2 lg:text-base `}>
+                <nav className="w-full lg:w-1/2">
+
+                <ul className={`flex justify-center items-center ${inconsolata.className} text-text text-2xl sm:text-xl sm:w-full sm:justify-around sm:px-20 lg:px-0 lg:w-full lg:text-base `}>
                     <li className={clsx("py-[38px] sm:py-4",{'text-mark-text2': path === '/'})}>
                         <Link 
                             href={'/'}
@@ -150,8 +155,10 @@ export function Navbar(){
                         </Link>
                     </li>
                 </ul>
+
+                </nav>
             </div>
        
-        </nav>
+        </header>
     )
 }
