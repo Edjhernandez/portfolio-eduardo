@@ -64,7 +64,7 @@ export default function Contact() {
                 src={'/images/icon-linkedin.svg'}
                 alt='linkedin icon'
               />
-              <p className="ml-4 text-2xl">Linkedin</p>
+              <p className="ml-4 text-2xl">LinkedIn</p>
             </Link>
 
             <Link
