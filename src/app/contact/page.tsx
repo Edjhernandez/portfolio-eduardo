@@ -16,7 +16,7 @@ export default function Contact() {
             src={'/images/logo3.png'}
             alt="logo"
           />
-          <p className="text-center">If you liked my work and you need me, I'm ready to talk to you.</p>
+          <p className="text-center">If you liked my work and you need me, I&#8242;m ready to talk to you.</p>
         </section>
 
         <section className="text-mark-text2 mt-16 w-full flex flex-col items-center lg:mt-0">
