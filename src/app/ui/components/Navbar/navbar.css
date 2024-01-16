@@ -1,0 +1,27 @@
+.menu-animation-in {
+  animation-duration: 1s;
+  animation-name: slide-left-right;
+}
+
+.menu-animation-out {
+  animation-duration: 1s;
+  animation-name: slide-right-left;
+}
+
+@keyframes slide-left-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
