@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💼My portfolio💼
 
-## Getting Started
+This repository hosts my development projects, used to practice and learn new tools and technologies 👨‍💻, as well as show some of my personal information and the means to contact me 📱.
+
+# Build with:
+
+## Nextjs
+## ES6
+## Typescript Modules
+## Git workflow
+## Tailwind
+## React
+
+# Getting Started
 
 First, run the development server:
 
@@ -16,21 +27,22 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![image](https://github.com/Edjhernandez/portfolio-eduardo/assets/109191350/295b98b5-0871-467f-a41e-274029a8c8fa)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Authors 🤯
 
-## Learn More
+- GitHub: [@Edjhernandez](https://github.com/Edjhernandez)
 
-To learn more about Next.js, take a look at the following resources:
+## Show your support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Give a ⭐️ if you like this project!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📝 License
 
-## Deploy on Vercel
+This project is [MIT](./MIT.md) licensed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
